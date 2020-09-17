@@ -1,8 +1,13 @@
 #include <Arduino.h>
 #include <Wire.h>
 #include <BH1750.h>
+#include <SPI.h>
+#include <Adafruit_BMP280.h>
 
 #define debug true // If true - debug info will be shown in console
+
+//Adafruit_BMP280 bmp; 
+
 
 BH1750 lightSensor;
 // Function to get light level in lux from BH1750 sensor with auto enviroment adjustment
